@@ -79,7 +79,7 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 |Arduino Uno | What the item is used for | $29.95 |<a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| MQ-2 | Senses the air quality | $2.40 | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| MQ-2 | Senses the air quality | $2.40 | <a href="https://www.amazon.com/Reland-Sun-MQ-2-Sensor-Module/dp/B09NN39G8X/ref=sr_1_7?keywords=mq2+sensor&qid=1690238357&sr=8-7)/"> Link </a> |
 | Breadboard| What the item is used for | $5.99 | <a href="https://www.amazon.com/Qunqi-point-Experiment-Breadboard-5-5%C3%978-2%C3%970-85cm/dp/B0135IQ0ZC/ref=sr_1_14?keywords=breadboard&qid=1690238135&sr=8-14/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 
