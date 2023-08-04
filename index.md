@@ -30,19 +30,15 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 # Second Milestone
+For my second milestone, I used a temperature and humidity sensor and an air quality monitor to sense the temperature, humidity, and air quality, and then display all of that information on an OLED screen. The main components of this milestone are the Arduino which is connected to the breadboard through jumper wires, a MQ135 which is an air quality sensor, and a DHT11 which is a temperature and humidity sensor. I was surprised when the OLED screen displayed all the information because it came from different sensors and I wasn’t sure how it would be able to display information from multiple sources. Before my final milestone, I might modify this project to include a housing for all the essential modules or incorporate wifi which will enable the user to read the data from the sensors online.
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZiqZOsmDcI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
 
 # First Milestone
-For this milestone, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the dht11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the dht11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
+For this milestone, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the DHT11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the DHT11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QBXinuajtAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -72,12 +68,12 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-|Arduino Uno |electronics platform| $29.95 |<a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| MQ (135) | air quality sensor | $8.99 | <a href="https://www.amazon.com/MQ-135-Quality-Hazardous-Detection-Arduino/dp/B07ZZ61LQT/"> Link </a> |
-| Breadboard| builds circuits | $5.99 | <a href="https://www.amazon.com/Qunqi-point-Experiment-Breadboard-5-5%C3%978-2%C3%970-85cm/dp/B0135IQ0ZC/ref=sr_1_14?keywords=breadboard&qid=1690238135&sr=8-14/"> Link </a> |
-| Digital Multimeter | measures electrical values | $12.49 | <a href="https://www.amazon.com/Etekcity-Multimeter-MSR-R500-Electronic-Multimeters/dp/B01N9QW620?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=ATVPDKIKX0DER&th=1/"> Link </a> |
-|LCD Display| displays information | $6.99 | <a href="https://www.amazon.com/HiLetgo-Serial-128X64-Display-Color/dp/B06XRBYJR8/ref=sr_1_1?crid=JT0EWNQMBAVT&keywords=Hiletgo+oled+module+96+inch+4+pin+front+color+blue&qid=1690296040&s=electronics&sprefix=hiletgo+oled+module+96+inch+4+pin+front+color+blue%2Celectronics%2C79&sr=1-1/"> Link </a> |
-|DHT11| temperature and humidity monitor | $2.00 | <a href="https://www.amazon.com/ESP8266-ESP-01-Temperature-Humidity-Module/dp/B0B37NK7VN/ref=sr_1_7?crid=3KWWBSPUJVLMN&keywords=dht11+1+piece&qid=1690554840&sprefix=dht11+1+piece%2Caps%2C87&sr=8-7/"> Link </a> |
+|Arduino Uno |Electronics platform| $29.95 |<a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| MQ (135) | Air quality sensor | $8.99 | <a href="https://www.amazon.com/MQ-135-Quality-Hazardous-Detection-Arduino/dp/B07ZZ61LQT/"> Link </a> |
+| Breadboard| Builds circuits | $5.99 | <a href="https://www.amazon.com/Qunqi-point-Experiment-Breadboard-5-5%C3%978-2%C3%970-85cm/dp/B0135IQ0ZC/ref=sr_1_14?keywords=breadboard&qid=1690238135&sr=8-14/"> Link </a> |
+| Digital Multimeter | Measures electrical values | $12.49 | <a href="https://www.amazon.com/Etekcity-Multimeter-MSR-R500-Electronic-Multimeters/dp/B01N9QW620?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&smid=ATVPDKIKX0DER&th=1/"> Link </a> |
+|LCD Display| Displays information | $6.99 | <a href="https://www.amazon.com/HiLetgo-Serial-128X64-Display-Color/dp/B06XRBYJR8/ref=sr_1_1?crid=JT0EWNQMBAVT&keywords=Hiletgo+oled+module+96+inch+4+pin+front+color+blue&qid=1690296040&s=electronics&sprefix=hiletgo+oled+module+96+inch+4+pin+front+color+blue%2Celectronics%2C79&sr=1-1/"> Link </a> |
+|DHT11| Temperature and humidity monitor | $2.00 | <a href="https://www.amazon.com/ESP8266-ESP-01-Temperature-Humidity-Module/dp/B0B37NK7VN/ref=sr_1_7?crid=3KWWBSPUJVLMN&keywords=dht11+1+piece&qid=1690554840&sprefix=dht11+1+piece%2Caps%2C87&sr=8-7/"> Link </a> |
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
