@@ -32,8 +32,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 # Second Milestone
 For my second milestone, I used a temperature and humidity sensor and an air quality monitor to sense the temperature, humidity, and air quality, and then display all of that information on an OLED screen. The main components of this milestone are the Arduino which is connected to the breadboard through jumper wires, a MQ135 which is an air quality sensor, and a DHT11 which is a temperature and humidity sensor. I was surprised when the OLED screen displayed all the information because it came from different sensors and I wasn’t sure how it would be able to display information from multiple sources. Before my final milestone, I might modify this project to include a housing for all the essential modules or incorporate wifi which will enable the user to read the data from the sensors online.
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZiqZOsmDcI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
