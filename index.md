@@ -62,13 +62,9 @@ SoftwareSerial EspSerial(2, 3); // RX, TX
 ESP8266 wifi(&EspSerial);
 BlynkTimer timer;
 
-//#include <Fonts/FreeSans9pt7b.h>
-//#include <Fonts/FreeMonoOblique9pt7b.h>
 
-//#define SCREEN_WIDTH 128
-//#define SCREEN_HEIGHT 64
-//#define OLED_RESET 4
-//Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+
 
 #define sensor A0
 #define DHTPIN 7
@@ -119,15 +115,6 @@ digitalWrite (11,LOW);
 
 }
 
-  // display.setTextColor(WHITE);
-  // display.setTextSize(1);
-  // display.setCursor(1, 5);
-  // display.setFont();
-  // display.println("Air Quality:");
-  // display.setTextSize(1);
-  // display.setCursor(20, 23);
-  // display.setFont(&FreeMonoOblique9pt7b);
-  // display.println(quality);
   // if (gasLevel > 225) {
   //   tone(buzzerPin, 440);
   //   delay(1000);
@@ -155,7 +142,6 @@ digitalWrite (11,LOW);
   
   
 void myTimerEvent(){
-  //display.clearDisplay();
   air_sensor();
   readDHT();
   Blynk.virtualWrite(V0,quality);
@@ -164,12 +150,9 @@ void myTimerEvent(){
   Blynk.virtualWrite(V3,temp_c);
   Blynk.virtualWrite(V4,gasLevel);
 
-  //display.display();
-  //int sensorValue = analogRead(A0);
-  //Serial.println(sensorValue);
 
 
-  // if (gasLevel > 225) {
+  if (gasLevel > 225) {
   //   digitalWrite(11, HIGH);  // turn the LED on (HIGH is the voltage level)
   //   delay(1000);             // wait for a second
   // } else {
@@ -200,9 +183,9 @@ void setup() {
   pinMode(11,OUTPUT);
   //pinMode(buzzerPin, OUTPUT);
   dht.begin();
-  //pinMode(12, OUTPUT);
-  //pinMode(13, OUTPUT);
-  //pinMode(11, OUTPUT); 
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(11, OUTPUT); 
   EspSerial.begin(ESP8266_BAUD);
   delay(10);
   Blynk.begin(auth, wifi, ssid, pass);
