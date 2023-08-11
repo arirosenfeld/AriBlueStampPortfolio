@@ -12,7 +12,6 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 |:--:|:--:|:--:|:--:|
 | Ari R | Frisch | Electrical Engineering | Incoming Sophomore
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
 ![Headstone Image](WhatsApp Image 2023-08-11 at 10.01.57 AM (1).jpeg)
   
