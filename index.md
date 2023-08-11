@@ -3,6 +3,10 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 
 
 
+```HTML 
+<!--- This is an HTML comment in Markdown -->
+<!--- Anything between these symbols will not render on the published site -->
+```
 
 | **Engineer** |**School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
