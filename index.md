@@ -1,12 +1,5 @@
 # Air Quality Monitor
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
-
-
-
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-
-
 | **Engineer** |**School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ari R | Frisch | Electrical Engineering | Incoming Sophomore
@@ -15,8 +8,6 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 ![Headstone Image](WhatsApp Image 2023-08-11 at 10.01.57 AM (1).jpeg)
   
 # Final Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3n60GqFJ_KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -29,13 +20,13 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 # Second Milestone
-For my second milestone, I used a temperature and humidity sensor and an air quality monitor to sense the temperature, humidity, and air quality, and then display all of that information on an OLED screen. The main components of this milestone are the Arduino which is connected to the breadboard through jumper wires, a MQ135 which is an air quality sensor, and a DHT11 which is a temperature and humidity sensor. I was surprised when the OLED screen displayed all the information because it came from different sensors and I wasn’t sure how it would be able to display information from multiple sources. Before my final milestone, I might modify this project to include a housing for all the essential modules or incorporate wifi which will enable the user to read the data from the sensors online.
+  For my second milestone, I used a temperature and humidity sensor and an air quality monitor to sense the temperature, humidity, and air quality, and then display all of that information on an OLED screen. The main components of this milestone are the Arduino which is connected to the breadboard through jumper wires, a MQ135 which is an air quality sensor, and a DHT11 which is a temperature and humidity sensor. I was surprised when the OLED screen displayed all the information because it came from different sensors and I wasn’t sure how it would be able to display information from multiple sources. Before my final milestone, I might modify this project to include a housing for all the essential modules or incorporate wifi which will enable the user to read the data from the sensors online.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZiqZOsmDcI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 # First Milestone
-For this milestone, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the DHT11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the DHT11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
+  For this milestone, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the DHT11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the DHT11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QBXinuajtAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -229,8 +220,6 @@ void loop() {
 ```
 
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
@@ -238,7 +227,3 @@ Don't forget to place the link of where to buy each component inside the quotati
 | MQ135 | Air quality sensor | $8.99 | <a href="https://www.amazon.com/MQ-135-Quality-Hazardous-Detection-Arduino/dp/B07ZZ61LQT/"> Link </a> |
 |ESP8266 | Wifi Module | $6.59 | <a href="https://www.amazon.com/DIYmall-ESP8266-ESP-01S-Serial-Transceiver/dp/B00O34AGSU/"> Link </a> |
 |DHT11| Temperature and humidity monitor | $2.00 | <a href="https://www.amazon.com/ESP8266-ESP-01-Temperature-Humidity-Module/dp/B0B37NK7VN/ref=sr_1_7?crid=3KWWBSPUJVLMN&keywords=dht11+1+piece&qid=1690554840&sprefix=dht11+1+piece%2Caps%2C87&sr=8-7/"> Link </a> |
-
-
-
-To watch the BSE tutorial on how to create a portfolio, click here.
