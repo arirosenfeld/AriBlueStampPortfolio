@@ -28,7 +28,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 # First Milestone
-    For this milestone, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the DHT11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the DHT11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
+  For this milestone, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the DHT11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the DHT11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QBXinuajtAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
