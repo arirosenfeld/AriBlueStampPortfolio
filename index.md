@@ -67,9 +67,9 @@ Don't forget to place the link of where to buy each component inside the quotati
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 |Arduino Uno |Electronics platform| $29.95 |<a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| MQ (135) | Air quality sensor | $8.99 | <a href="https://www.amazon.com/MQ-135-Quality-Hazardous-Detection-Arduino/dp/B07ZZ61LQT/"> Link </a> |
+| MQ135 | Air quality sensor | $8.99 | <a href="https://www.amazon.com/MQ-135-Quality-Hazardous-Detection-Arduino/dp/B07ZZ61LQT/"> Link </a> |
 | Breadboard| Builds circuits | $5.99 | <a href="https://www.amazon.com/Qunqi-point-Experiment-Breadboard-5-5%C3%978-2%C3%970-85cm/dp/B0135IQ0ZC/ref=sr_1_14?keywords=breadboard&qid=1690238135&sr=8-14/"> Link </a> |
-| ESP8266 | Wifi Module | $6.59 | <a href="https://www.amazon.com/DIYmall-ESP8266-ESP-01S-Serial-Transceiver/dp/B00O34AGSU/"> Link </a> |
+|ESP8266 | Wifi Module | $6.59 | <a href="https://www.amazon.com/DIYmall-ESP8266-ESP-01S-Serial-Transceiver/dp/B00O34AGSU/"> Link </a> |
 |LCD Display| Displays information | $6.99 | <a href="https://www.amazon.com/HiLetgo-Serial-128X64-Display-Color/dp/B06XRBYJR8/ref=sr_1_1?crid=JT0EWNQMBAVT&keywords=Hiletgo+oled+module+96+inch+4+pin+front+color+blue&qid=1690296040&s=electronics&sprefix=hiletgo+oled+module+96+inch+4+pin+front+color+blue%2Celectronics%2C79&sr=1-1/"> Link </a> |
 |DHT11| Temperature and humidity monitor | $2.00 | <a href="https://www.amazon.com/ESP8266-ESP-01-Temperature-Humidity-Module/dp/B0B37NK7VN/ref=sr_1_7?crid=3KWWBSPUJVLMN&keywords=dht11+1+piece&qid=1690554840&sprefix=dht11+1+piece%2Caps%2C87&sr=8-7/"> Link </a> |
 
