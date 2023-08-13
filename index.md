@@ -212,4 +212,4 @@ void loop() {
 |ESP8266 | Wifi Module | $6.59 | <a href="https://www.amazon.com/DIYmall-ESP8266-ESP-01S-Serial-Transceiver/dp/B00O34AGSU/"> Link </a> |
 |DHT11| Temperature and humidity monitor | $2.00 | <a href="https://www.amazon.com/ESP8266-ESP-01-Temperature-Humidity-Module/dp/B0B37NK7VN/ref=sr_1_7?crid=3KWWBSPUJVLMN&keywords=dht11+1+piece&qid=1690554840&sprefix=dht11+1+piece%2Caps%2C87&sr=8-7/"> Link </a> |
 |LED (X3)| Source of light | $0.0499| <a href="https://www.amazon.com/MCIGICM-Circuit-Assorted-Science-Experiment/dp/B07PG84V17/ref=sr_1_29?keywords=led&qid=1691963655&sr=8-29&th=1/"> Link </a> |
-|Passive Buzzer| Plays noises | $0.799| <a href="https://www.amazon.com/a15091400ux0103-Electronic-Mounting-Passive-Sounder/dp/B018I1WBNQ/ref=sr_1_3?crid=1RV07S9JFLHEK&keywords=passive+buzzer&qid=1691967166&sprefix=passive+buzze%2Caps%2C125&sr=8-3/"> Link </a> |
+|Passive Buzzer| Plays noises | $0.799| <a href="[https://www.amazon.com/a15091400ux0103-Electronic-Mounting-Passive-Sounder/dp/B018I1WBNQ/ref=sr_1_3?crid=1RV07S9JFLHEK&keywords=passive+buzzer&qid=1691967166&sprefix=passive+buzze%2Caps%2C125&sr=8-3/"> Link </a> |
