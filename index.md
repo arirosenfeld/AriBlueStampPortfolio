@@ -12,6 +12,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3n60GqFJ_KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+  For my final milestone I added several modifcations to my project. Firstly, I added a buzzer that goes off when the air quality is very poor which gives a warning to the user that they should avoid being exposed to that air. Secondly, I added a 3 LEDs that are are correspond to the air quality. For example, if there is awful air quality then the red LED will go on but if there is good air then the green LED will go on. Previously, the imformation from the sensors was displayed on an OLED screen. However, My biggest modification was that I added a ESP8266 which is a wifi moduule. Incorporating a wifi module enabled me to send the imformation from all the sensors onto BLYNK which is a webesite that displays the imformation that the sensors were reading. Such as, air quality, humidity, and temperature. This project, and BlueStamp as a whole as given me more experience with both hardware and software whether it was working on the code, buidling the circuit, setting up the sensors, or configuring BLYNK. In the future I hope to expand my knowledge of these topics as well as gain more engineering experience.
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
 - What your biggest challenges and triumphs were at BSE
@@ -27,7 +28,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 # First Milestone
-  For this milestone, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the DHT11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the DHT11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
+  For the 1st part of this project, I used a DHT11 which is a temperature and humidity sensor, and a MQ 135 which is an air quality monitor. After trial and error, I got the temperature and humidity monitor as well as the air quality monitor to print their measurements on the serial monitor. One challenge I encountered during this milestone was that it was difficult to get the DHT11 sensor to work and print simultaneously with the air sensor. Another issue I had was that the DHT11 monitor wasn’t printing the humidity and temperature. I solved that problem by reconnecting the wires and then uploading the code again.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QBXinuajtAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
