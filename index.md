@@ -2,24 +2,17 @@
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 ''' HTML
-| Engineer | School | Area of Interest | Grade |
-|:--:|:--:|:--:|:--:|
-| Ari R | Frisch | Electrical Engineering | Incoming Sophomore
+  | Engineer | School | Area of Interest | Grade |
+  |:--:|:--:|:--:|:--:|
+  | Ari R | Frisch | Electrical Engineering | Incoming Sophomore
 '''
 
 ![Headstone Image](WhatsApp Image 2023-08-11 at 10.01.57 AM (1).jpeg)
   
 # Final Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3n60GqFJ_KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
   For my final milestone I added several modifcations to my project. Firstly, I added a buzzer that goes off when the air quality is very poor which gives a warning to the user that they should avoid being exposed to that air. Secondly, I added a 3 LEDs that are are correspond to the air quality. For example, if there is awful air quality then the red LED will go on but if there is good air then the green LED will go on. Previously, the imformation from the sensors was displayed on an OLED screen. However, My biggest modification was that I added a ESP8266 which is a wifi moduule. Incorporating a wifi module enabled me to send the imformation from all the sensors onto BLYNK which is a webesite that displays the imformation that the sensors were reading. Such as, air quality, humidity, and temperature. This project, and BlueStamp as a whole as given me more experience with both hardware and software whether it was working on the code, buidling the circuit, setting up the sensors, or configuring BLYNK. In the future I hope to expand my knowledge of these topics as well as gain more engineering experience.
-For your final milestone, explain the outcome of your project. Key details to include are:
-- What you've accomplished since your previous milestone
-- What your biggest challenges and triumphs were at BSE
-- A summary of key topics you learned about
-- What you hope to learn in the future after everything you've learned at BSE
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3n60GqFJ_KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 # Second Milestone
