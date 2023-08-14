@@ -124,7 +124,7 @@ digitalWrite (11,LOW);
   //   delay(1000);
   
   
-void myTimerEvent(){//Setting up virtual pins and the sensors in order to send that imformation to Blynk 
+void myTimerEvent(){ //Setting up virtual pins and sensors in order to send that imformation to Blynk 
   air_sensor();
   readDHT();
   Blynk.virtualWrite(V0,quality);
