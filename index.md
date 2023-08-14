@@ -5,6 +5,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 |:--:|:--:|:--:|:--:|
 | Ari R | Frisch | Electrical Engineering | Incoming Sophomore
 '''
+
 ![Headstone Image](WhatsApp Image 2023-08-11 at 10.01.57 AM (1).jpeg)
   
 # Final Milestone
