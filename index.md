@@ -11,7 +11,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
   
 # Final Milestone
 
-  For my final milestone I added several modifcations to my project. Firstly, I added a buzzer that goes off when the air quality is very poor which gives a warning to the user that they should avoid being exposed to that air. Secondly, I added a 3 LEDs that are are correspond to the air quality. For example, if there is awful air quality then the red LED will go on but if there is good air then the green LED will go on. Previously, the imformation from the sensors was displayed on an OLED screen. However, My biggest modification was that I added a ESP8266 which is a wifi moduule. Incorporating a wifi module enabled me to send the imformation from all the sensors onto BLYNK which is a webesite that displays the imformation that the sensors were reading. Such as, air quality, humidity, and temperature. This project, and BlueStamp as a whole as given me more experience with both hardware and software whether it was working on the code, buidling the circuit, setting up the sensors, or configuring BLYNK. In the future I hope to expand my knowledge of these topics as well as gain more engineering experience.
+  For my final milestone I added several modifcations to my project. Firstly, I added a buzzer that goes off when the air quality is very poor which gives a warning to the user that they should avoid being exposed to that air. Secondly, I added a 3 LEDs that correspond to the air quality. For example, if there is awful air quality then the red LED will go on but if there is good air then the green LED will go on. Previously, the imformation from the sensors was displayed on an OLED screen. However, My biggest modification was that I added a ESP8266 which is a wifi moduule. Incorporating a wifi module enabled me to send the imformation from all the sensors onto Blynk which is a webesite that displays the imformation that the sensors were reading. Such as, air quality, humidity, and temperature. This project, and BlueStamp as a whole as given me more experience with both hardware and software whether it was working on the code, buidling the circuit, setting up the sensors, or configuring Blynk. In the future I hope to expand my knowledge of these topics as well as gain more engineering experience.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3n60GqFJ_KM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
@@ -32,11 +32,7 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 # Code
 ```c++
 
-#include <DHT.h>
-
-
-
-
+#include <DHT.h> //including libraries and setting up variables
 #define BLYNK_TEMPLATE_ID "TMPL2JF4CBDhH"
 #define BLYNK_TEMPLATE_NAME "Quickstart Template"
 #define BLYNK_AUTH_TOKEN "TokrsqDByGLi6pvNhXYA3sk7lByda0eh"
@@ -44,7 +40,6 @@ Replace this text with a brief description (2-3 sentences) of your project. This
 #define ESP8266_BAUD 9600
 #include <ESP8266_Lib.h>
 #include <BlynkSimpleShieldEsp8266.h>
-
 char auth[] = BLYNK_AUTH_TOKEN;
 char ssid[] = "Rosenfeld8";
 char pass[] = "Redbird8";
@@ -54,11 +49,6 @@ float roomTemperature = 0;
 SoftwareSerial EspSerial(2, 3); // RX, TX
 ESP8266 wifi(&EspSerial);
 BlynkTimer timer;
-
-
-
-
-
 #define sensor A0
 #define DHTPIN 7
 #define DHTTYPE DHT11
@@ -69,7 +59,7 @@ int buzzerPin = 8;
 float hum = 0;
 float temp_f = 0;
 float temp_c = 0;
-void readDHT(){
+void readDHT(){ //reading the DHT in celcius and then converting that number to farenheit
   hum = dht.readHumidity();
   temp_c = dht.readTemperature();
   temp_f =  temp_c * 1.8 + 32;
@@ -83,12 +73,12 @@ void readDHT(){
 
 
 void air_sensor() {
-  
+  //turning the LEDs off
   gasLevel = analogRead(sensor);
 digitalWrite (13,LOW);
 digitalWrite (12,LOW);
 digitalWrite (11,LOW);
-
+// making the gas level correlate to the air quality
   if (gasLevel < 181) {
     quality = "  GOOD!";
     digitalWrite(12, HIGH);
@@ -107,7 +97,7 @@ digitalWrite (11,LOW);
   }
 
 }
-
+// the buzzer plays if the gas level is awful
   // if (gasLevel > 225) {
   //   tone(buzzerPin, 440);
   //   delay(1000);
@@ -134,7 +124,7 @@ digitalWrite (11,LOW);
   //   delay(1000);
   
   
-void myTimerEvent(){
+void myTimerEvent(){ // setting up virtual pins and the sensors in order to send that imformation to Blynk 
   air_sensor();
   readDHT();
   Blynk.virtualWrite(V0,quality);
@@ -145,41 +135,16 @@ void myTimerEvent(){
 
 
 
-  if (gasLevel > 225) {
-  //   digitalWrite(11, HIGH);  // turn the LED on (HIGH is the voltage level)
-  //   delay(1000);             // wait for a second
-  // } else {
-  //   digitalWrite(11, LOW);
-  //   delay(1000);
-  // }
-
-  // if (gasLevel > 181 && gasLevel < 225) {
-  //   digitalWrite(13, HIGH);
-  //   delay(1000);
-  // } else {
-  //   digitalWrite(13, LOW);
-  //   delay(1000);
-  // }
-  // if (gasLevel < 181) {
-  //   digitalWrite(12, HIGH);
-  // } else {
-  //   digitalWrite(12, LOW);
-  //   delay(1000);
-  // }
-}
-
 void setup() {
-  Serial.begin(9600);
-  pinMode(sensor, INPUT);
+  Serial.begin(9600);//using the Serial Monitor
+//seting up inputs and  outputs 
+  pinMode(sensor, INPUT); 
   pinMode(12,OUTPUT);
   pinMode(13,OUTPUT);
   pinMode(11,OUTPUT);
   //pinMode(buzzerPin, OUTPUT);
-  dht.begin();
-  pinMode(12, OUTPUT);
-  pinMode(13, OUTPUT);
-  pinMode(11, OUTPUT); 
-  EspSerial.begin(ESP8266_BAUD);
+  dht.begin(); 
+  EspSerial.begin(ESP8266_BAUD); // setting up the ESP8266 wifi module
   delay(10);
   Blynk.begin(auth, wifi, ssid, pass);
   timer.setInterval(1000L, myTimerEvent);
@@ -188,9 +153,9 @@ void setup() {
   
 }
 
-void loop() {
+void loop() { // Initiates Blynk
     Blynk.run();
-  timer.run(); // Initiates BlynkTimer
+  timer.run();  
   
 }
 
