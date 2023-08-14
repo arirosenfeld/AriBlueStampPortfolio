@@ -97,7 +97,7 @@ digitalWrite (11,LOW);
   }
 
 }
-// the buzzer plays if the gas level is awful
+// the buzzer plays if the gas level is very bad
   // if (gasLevel > 225) {
   //   tone(buzzerPin, 440);
   //   delay(1000);
@@ -124,7 +124,7 @@ digitalWrite (11,LOW);
   //   delay(1000);
   
   
-void myTimerEvent(){ // setting up virtual pins and the sensors in order to send that imformation to Blynk 
+void myTimerEvent(){//setting up virtual pins and the sensors in order to send that imformation to Blynk 
   air_sensor();
   readDHT();
   Blynk.virtualWrite(V0,quality);
@@ -136,7 +136,7 @@ void myTimerEvent(){ // setting up virtual pins and the sensors in order to send
 
 
 void setup() {
-  Serial.begin(9600);//using the Serial Monitor
+  Serial.begin(9600);// Setting up the Serial Monitor
 //seting up inputs and  outputs 
   pinMode(sensor, INPUT); 
   pinMode(12,OUTPUT);
