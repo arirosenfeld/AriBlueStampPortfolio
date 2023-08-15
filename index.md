@@ -1,7 +1,6 @@
 # Air Quality Monitor
-  There are approximately 7 million people that die around the world do to exposure to poor air quality and 90% people worldwide breathe polluted air. Therefore, my project the air quality montior would be very useful since it shows the user the air quality as well as the temperature and humidity. Not only that but the imformation is displayed on Blynk which is a website so the user can look in advance to make sure the air is safe to breathe before they are exposed to the air.  
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
-
+  There are approximately 7 million people that die around the world due to exposure to poor air quality and 90% of people worldwide breathe polluted air. Therefore, my project the air quality monitor would be very useful since it shows the user the air quality as well as the temperature and humidity. Not only that but the information is displayed on Blynk which is a website so the user can look in advance to make sure the air is safe to breathe before they are exposed to the air. Through building this project, I learned a lot of vital skills that are crucial to becoming an engineer. For example, I studied  different signals whether analog or digital, expanded my coding abilities, interacted with new sensors and other components, and I built circuits. 
+  
 | **Engineer** | **School** | **Area of Interest**| **Grade** |
 |:--:|:--:|:--:|:--:|
 | Ari R | Frisch | Electrical Engineering | Incoming Sophomore
