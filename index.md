@@ -27,7 +27,7 @@
 
 # Schematics 
 ![Headstone Image](Epic Gogo-Uusam (1).png) 
-![Headstone Image] 
+![Headstone Image] (IMG_5169.JPG)
 # Code
 ```c++
 
