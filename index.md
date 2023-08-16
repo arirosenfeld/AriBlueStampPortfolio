@@ -30,7 +30,8 @@
 # Code
 ```c++
 
-#include <DHT.h> //including libraries and setting up variables
+
+#include <DHT.h>  //including libraries and setting up variables
 #define BLYNK_TEMPLATE_ID "TMPL2JF4CBDhH"
 #define BLYNK_TEMPLATE_NAME "Quickstart Template"
 #define BLYNK_AUTH_TOKEN "TokrsqDByGLi6pvNhXYA3sk7lByda0eh"
@@ -44,7 +45,7 @@ char pass[] = "Redbird8";
 float roomHumidity = 0;
 float roomTemperature = 0;
 #include <SoftwareSerial.h>
-SoftwareSerial EspSerial(2, 3); // RX, TX
+SoftwareSerial EspSerial(2, 3);  // RX, TX
 ESP8266 wifi(&EspSerial);
 BlynkTimer timer;
 #define sensor A0
@@ -57,15 +58,14 @@ int buzzerPin = 8;
 float hum = 0;
 float temp_f = 0;
 float temp_c = 0;
-void readDHT(){ //reading the DHT in celcius and then converting that number to farenheit
+void readDHT() {  //reading the DHT in celcius and then converting that number to farenheit
   hum = dht.readHumidity();
   temp_c = dht.readTemperature();
-  temp_f =  temp_c * 1.8 + 32;
+  temp_f = temp_c * 1.8 + 32;
   if (isnan(hum) || isnan(temp_c)) {
     Serial.println("Failed  to read from DHT sensor!");
     return;
   }
-  
 }
 
 
@@ -73,10 +73,10 @@ void readDHT(){ //reading the DHT in celcius and then converting that number to 
 void air_sensor() {
   //turning the LEDs off
   gasLevel = analogRead(sensor);
-digitalWrite (13,LOW);
-digitalWrite (12,LOW);
-digitalWrite (11,LOW);
-// making the gas level correlate to the air quality
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+  // making the gas level correlate to the air quality
   if (gasLevel < 181) {
     quality = "  GOOD!";
     digitalWrite(12, HIGH);
@@ -90,72 +90,69 @@ digitalWrite (11,LOW);
   } else {
     quality = " Toxic";
   }
-  if  (gasLevel > 225) {
+  if (gasLevel > 225) {
     digitalWrite(11, HIGH);
   }
-
 }
 // the buzzer plays if the gas level is very bad
-  // if (gasLevel > 225) {
-  //   tone(buzzerPin, 440);
-  //   delay(1000);
+// if (gasLevel > 225) {
+//   tone(buzzerPin, 440);
+//   delay(1000);
 
-  //   tone(buzzerPin, 494);
-  //   delay(1000);
+//   tone(buzzerPin, 494);
+//   delay(1000);
 
-  //   tone(buzzerPin, 523);
-  //   delay(1000);
+//   tone(buzzerPin, 523);
+//   delay(1000);
 
-  //   tone(buzzerPin, 587);
-  //   delay(1000);
+//   tone(buzzerPin, 587);
+//   delay(1000);
 
-  //   tone(buzzerPin, 659);
-  //   delay(1000);
+//   tone(buzzerPin, 659);
+//   delay(1000);
 
-  //   tone(buzzerPin, 698);
-  //   delay(1000);
+//   tone(buzzerPin, 698);
+//   delay(1000);
 
-  //   tone(buzzerPin, 784);
-  //   delay(1000);
+//   tone(buzzerPin, 784);
+//   delay(1000);
 
-  //   noTone(buzzerPin);
-  //   delay(1000);
-  
-  
-void myTimerEvent(){ //Setting up virtual pins and sensors in order to send that imformation to Blynk 
+//   noTone(buzzerPin);
+//   delay(1000);
+
+
+void myTimerEvent() {  //Setting up virtual pins and sensors in order to send that imformation to Blynk
   air_sensor();
   readDHT();
-  Blynk.virtualWrite(V0,quality);
-  Blynk.virtualWrite(V1,hum);
-  Blynk.virtualWrite(V2,temp_f);
-  Blynk.virtualWrite(V3,temp_c);
-  Blynk.virtualWrite(V4,gasLevel);
+  Blynk.virtualWrite(V0, quality);
+  Blynk.virtualWrite(V1, hum);
+  Blynk.virtualWrite(V2, temp_f);
+  Blynk.virtualWrite(V3, temp_c);
+  Blynk.virtualWrite(V4, gasLevel);
+}
 
 
 
 void setup() {
-  Serial.begin(9600);// Setting up the Serial Monitor
-//seting up inputs and  outputs 
-  pinMode(sensor, INPUT); 
-  pinMode(12,OUTPUT);
-  pinMode(13,OUTPUT);
-  pinMode(11,OUTPUT);
+  Serial.begin(9600);  // Setting up the Serial Monitor
+                       //seting up inputs and  outputs
+  pinMode(sensor, INPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(11, OUTPUT);
   //pinMode(buzzerPin, OUTPUT);
-  dht.begin(); 
-  EspSerial.begin(ESP8266_BAUD); // setting up the ESP8266 wifi module
+  dht.begin();
+  EspSerial.begin(ESP8266_BAUD);  // setting up the ESP8266 wifi module
   delay(10);
   Blynk.begin(auth, wifi, ssid, pass);
   timer.setInterval(1000L, myTimerEvent);
-  
-
-  
 }
 
-void loop() { // Initiates Blynk
-    Blynk.run();
-  timer.run();  
-  
+void loop() {  // Initiates Blynk
+  Blynk.run();
+  timer.run();
 }
+
 
 ```
 
