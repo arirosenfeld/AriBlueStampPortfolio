@@ -27,7 +27,7 @@
 
 # Schematics 
 ![Headstone Image](Epic Gogo-Uusam (1).png) 
-This is a picture of my wiring. Unfortunately, Tinkercad didn't have a MQ135 (air quality monitor) DHT11 (temperature and humidity sensor) or ESP8266 (wifi module) but they can be seen below. 
+This is a picture of my wiring. Unfortunately, Tinkercad didn't have a MQ135 (air quality monitor), DHT11 (temperature and humidity sensor), or ESP8266 (wifi module) but they can be seen below. 
 ![Headstone Image](IMG_5169.JPG)
 # Code
 ```c++
